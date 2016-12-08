@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/tongyong.css" />
+
+		<style type="text/css">
+			input {
+				margin: 6px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav id="el-top" class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+						<span class="sr-only">test</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="##">首页</a>
+						</li>
+						<li>
+							<a href="##" style="color:#00a8ff ;">小强</a>
+						</li>
+						<li>
+							<a href="##">赶快充值</a>
+						</li>
+						<li>
+							<a href="##">注销</a>
+						</li>
+						<li>
+							<a href="##">帮助</a>
+						</li>
+						<li>
+							<a href="##">联系客服</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="menubar" class="navbar navbar-default collapse navbar-collapse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a href="##"><img src="./images/logo.png" /></a>
+					</div>
+				</div>
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="">我要投资</a>
+					</li>
+					<li>
+						<a href="">我要借款</a>
+					</li>
+					<li class="active">
+						<a href="">个人中心</a>
+					</li>
+					<li>
+						<a href="">新手指引</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<ul class="list-group" id="menu">
+						<li class="list-group-item">
+							<a href="#">投资项目</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#">借款项目</a>
+						</li>
+						<ul id="innerul">
+							<li>
+								<a href="#">借款项目</a>
+							</li>
+							<li>
+								<a href="#">还款明细</a>
+							</li>
+						</ul>
+
+						<li class="list-group-item">
+							<a href="#"><span class="text-title">我的账户</span></a>
+						</li>
+						<ul class="in" id="innerul">
+							<li>
+								<a href="#">账户信息</a>
+							</li>
+							<li class="active">
+								<a href="#">实名认证</a>
+							</li>
+							<li>
+								<a href="#">银行卡管理</a>
+							</li>
+							<li>
+								<a href="#">登录记录</a>
+							</li>
+						</ul>
+						<li class="list-group-item">
+							<a href="#">
+								<span>资产详情</span>
+							</a>
+						</li>
+						<ul class="in" id="innerul">
+							<li>
+								<a href="#">账户流水</a>
+							</li>
+							<li>
+								<a href="#">充值明细</a>
+							</li>
+							<li>
+								<a>提现记录</a>
+							</li>
+							<li>
+								<a>收款明细</a>
+							</li>
+						</ul>
+						<li class="list-group-item">
+							<a href="#"> <span>个人资料</span></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-9">
+					<div class="panel-body ">
+						<div class="panel panel-default" style="margin-top: -7px;">
+							<div class="panel-heading">
+								<span class="pull-left" style="line-height: 35px;">实名认证管理</span>
+								<a class="pull-right btn btn-success btn-sm"  data-toggle="modal" data-target="#create">
+									添加
+								</a>
+								<div class="clearfix"></div>
+							</div>
+							<table class="table table-bordered" id="mytable">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>姓名</th>
+										<th>身份证</th>
+										<th>电话</th>
+										<th>城市</th>
+										<th>状态</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>小强</td>
+										<td>52344449999888</td>
+										<td>167898199</td>
+										<td>成都</td>
+										<td>审核失败</td>
+										<td>
+											<button class="btn btn-primary">编辑</button>
+											<button class="btn btn-danger">删除</button>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="7">
+											<ul class="pagination" id="pagination">
+
+											</ul>
+										</td>
+									</tr>
+
+								</tfoot>
+							</table>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<footer class="row">
+			<div class="container">
+				<div class="col-sm-8 infolist">
+					<ul>
+						<li>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</li>
+						<li>版权所有： 2006-2015成都源代码教育咨询有限公司</li>
+						<li>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</li>
+						<li>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</li>
+						<li>
+							<a href="##">蜀ICP备14030149号-1</a>
+							<a href="##">蜀公网安备510114990541</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<span>官方微博：</span>
+					<img src="./images/tecent.png" width="100%" />
+					<img src="./images/sina.png" / width="100%">
+				</div>
+				<div class="col-sm-2">
+					<span>官方微信：</span>
+					<img src="./images/contract.png" width="100%" />
+				</div>
+			</div>
+		</footer>
+		<div class="modal fade" id="create" data-backdrop="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">添加数据</h4>
+					</div>
+					<div class="modal-body">
+						<form action="" class="form-horizontal" id="form1">
+							<div class="form-group">
+								<label for="" class="col-sm-2 control-label">姓名</label>
+
+								<div class="col-sm-10"><input type="text" name="username" class="form-control "></div>
+
+							</div>
+							<div class="form-group">
+								<label for="" class="control-label col-sm-2">身份证</label>
+								<div class="col-sm-10"><input type="text" name="cid" class="form-control"></div>
+
+							</div>
+							<div class="form-group">
+								<label for="" class="control-label col-sm-2">电话</label>
+								<div class="col-sm-10"><input type="text" name="phone" class="form-control"></div>
+							</div>
+							<div class="form-group">
+								<label for="" class="control-label col-sm-2">城市</label>
+								<div class="col-sm-10"><input type="text" name="city" class="form-control"></div>
+							</div>
+							<div class="form-group">
+								<label for="" class="control-label col-sm-2">状态</label>
+								<div class="col-sm-10" name="status">
+									<select name="status" id="" class="form-control">
+										<option>审核失败</option>
+										<option>审核通过</option>
+										<option>待审核</option>
+									</select>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-success" id="save">保存</button>
+						<button class="btn btn-danger" data-dismiss="modal">取消</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$.ajax({
+				type: "get",
+				url: "http://localhost:3000/mockapi",
+				async: true,
+				dataType: "jsonp",
+				success: function(data) {
+					//1 获取到表格的tbody
+					//2 循环 data数据   拼接tr 装上td
+					//3 把tr 添加到tbody 
+					showtable("#mytable", data);
+
+				},
+				error: function(err) {
+					console.log(err);
+				}
+			});
+
+			function showtable(id, data) {
+				var $tbody = $(id).find("tbody")
+				var dataArr = data.itemGroup;
+				//2 循环 data数据   拼接tr 装上td
+				$.each(dataArr, function(index, item) {
+					//每次循环都希望有一个tr被创建出来 
+					var $tr = $("<tr></tr>");
+					var $td = $("<td><button class='btn btn-primary'>编辑</button><button class='btn btn-danger'>删除</button></td>")
+						//把item对象里面的内容拿出来放到td里面
+					$.each(item, function(name, value) {
+						//把value放到td里面
+						var $td = $("<td>" + value + "</td>");
+						//td 加到tr里面
+						$tr.append($td);
+					});
+					/*<tr><td></td>....</tr> 还差一个操作的td*/
+					$tr.append($td);
+					//走到这步的时候 创建好了一个tr 并且 里面有数据
+					$tbody.append($tr);
+
+				})
+			}
+
+		});
+	</script>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/tongyong.css" />
+		<style type="text/css">
+			input{
+				margin: 6px;
+			}
+		</style>	
+	</head>
+
+	<body>
+		<nav id="el-top" class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+						<span class="sr-only">test</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="##">首页</a>
+						</li>
+						<li>
+							<a href="##" style="color:#00a8ff ;">小强</a>
+						</li>
+						<li>
+							<a href="##">赶快充值</a>
+						</li>
+						<li>
+							<a href="##">注销</a>
+						</li>
+						<li>
+							<a href="##">帮助</a>
+						</li>
+						<li>
+							<a href="##">联系客服</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="menubar" class="navbar navbar-default collapse navbar-collapse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a href="##"><img src="./images/logo.png" /></a>
+					</div>
+				</div>
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="">我要投资</a>
+					</li>
+					<li>
+						<a href="">我要借款</a>
+					</li>
+					<li class="active">
+						<a href="">个人中心</a>
+					</li>
+					<li>
+						<a href="">新手指引</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<ul class="list-group" id="menu">
+						<li class="list-group-item">
+							<a href="#">投资项目</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#">借款项目</a>
+						</li>
+						<ul id="innerul">
+							<li>
+								<a href="#">借款项目</a>
+							</li>
+							<li>
+								<a href="#">还款明细</a>
+							</li>
+						</ul>
+
+						<li class="list-group-item">
+							<a href="#"><span class="text-title">我的账户</span></a>
+						</li>
+						<ul class="in" id="innerul">
+							<li>
+								<a href="#">账户信息</a>
+							</li>
+							<li class="active">
+								<a href="#">实名认证</a>
+							</li>
+							<li>
+								<a href="#">银行卡管理</a>
+							</li>
+							<li>
+								<a href="#">登录记录</a>
+							</li>
+						</ul>
+						<li class="list-group-item">
+							<a href="#">
+								<span>资产详情</span>
+							</a>
+						</li>
+						<ul class="in" id="innerul">
+							<li>
+								<a href="#">账户流水</a>
+							</li>
+							<li>
+								<a href="#">充值明细</a>
+							</li>
+							<li>
+								<a>提现记录</a>
+							</li>
+							<li>
+								<a>收款明细</a>
+							</li>
+						</ul>
+						<li class="list-group-item">
+							<a href="#"> <span>个人资料</span></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-9">
+					<div class="panel panel-default" style="margin-top: 8px;">
+						<div class="panel-body ">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									实名认证
+								</div>
+								<form id="myform" action="#">
+									<fieldset>
+										<div class="form-group" >
+											<p class="text-center text-danger">为保护您账户安全，实名认证成功之后不能修改信息，请认真填写！</p>
+										</div>
+										<label class="col-sm-4 control-label ">用户名</label>
+										<div class="col-sm-8">
+											<p class="form-control-static">小强</p>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-4 control-label" for="realName">姓名</label>
+											<div class="col-sm-8">
+												<input id="realName" name="realName" class="form-control" type="text" value="">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-4  control-label" for="sex">性别</label>
+											<div class="col-sm-8">
+												<select id="sex" class="form-control" name="sex" size="1">
+													<option value="0">男</option>
+													<option value="1">女</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-4  control-label" for="idtype">证件类型</label>
+											<div class="col-sm-8">
+												<select id="idType" class="form-control" name="idtype" class="select_common" size="1">
+													<option value="0">身份证</option>
+													<option value="1">驾驶证</option>
+													<option value="2">军官证</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-4  control-label" for="idnumber">证件号码</label>
+											<div class="col-sm-8">
+												<input id="idNumber" class="form-control" name="idnumber" type="text" value="">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-4  control-label" for="birthdate">出生日期</label>
+											<div class="col-sm-8">
+												<input id="birthDate" class="form-control" name="birthdate" type="text">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-4  control-label" for="address">证件地址</label>
+											<div class="col-sm-8">
+												<input id="address" class="form-control" name="address" type="text" style="max-width: 100%;width:500px;">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-4  control-label" for="address">身份证照片</label>
+											<div class="col-sm-8">
+												<p class="text-help text-primary">请点击“选择图片”,选择证件的正反两面照片。</p>
+												<a href="javascript:;" id="viewExample">查看样板</a>
+												<div class="idCardItem">
+													<div>
+														<a href="javascript:;" id="uploadBtn1">上传正面</a>
+													</div>
+													<img alt="" src="" class="uploadImg" id="uploadImg1" />
+													<input type="hidden" value="" name="papersimg01" />
+												</div>
+												<div class="idCardItem">
+													<div>
+														<a href="javascript:;" id="uploadBtn2">上传反面</a>
+													</div>
+													<img alt="" src="" class="uploadImg" id="uploadImg2" />
+													<input type="hidden" value="" name="papersimg02" />
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+										<div class="form-group">
+											<button type="submit"class="btn btn-primary col-sm-offset-4"><i class="icon-ok"></i> 提交认证</button>
+										</div>
+									</fieldset>
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<footer class="row">
+			<div class="container">
+				<div class="col-sm-8 infolist">
+					<ul>
+						<li>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</li>
+						<li>版权所有： 2006-2015成都源代码教育咨询有限公司</li>
+						<li>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</li>
+						<li>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</li>
+						<li>
+							<a href="##">蜀ICP备14030149号-1</a>
+							<a href="##">蜀公网安备510114990541</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<span>官方微博：</span>
+					<img src="./images/tecent.png" width="100%" />
+					<img src="./images/sina.png" / width="100%">
+				</div>
+				<div class="col-sm-2">
+					<span>官方微信：</span>
+					<img src="./images/contract.png" width="100%" />
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>

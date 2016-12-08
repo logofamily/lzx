@@ -1,0 +1,75 @@
+html,
+body,
+ul,
+li,
+div {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+ul,
+li {
+  list-style: none;
+}
+#el-top {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+#el-top div.navbar-header a {
+  color: #fff;
+  font: 24px "微软雅黑";
+}
+#el-top ul li a {
+  color: #fff;
+  font: 16px "微软雅黑";
+}
+#el-top ul li a:hover {
+  color: #00a8ff;
+}
+#menubar {
+  border-radius: 0;
+  margin: 0;
+}
+#menubar div.container ul li a {
+  display: block;
+  min-width: 94px;
+  height: 80px;
+  text-align: center;
+  font: 16px/50px "微软雅黑";
+}
+#menubar div.container div.navbar-brand {
+  padding-top: 20px;
+}
+#slideimg {
+  width: 1328px;
+  margin: 8px auto;
+}
+footer {
+  background: #f8f8f8;
+  padding-top: 30px;
+}
+footer div.infolist ul li {
+  padding: 5px;
+}
+footer div.infolist ul li a {
+  padding-right: 10px;
+}
+#menu{
+	margin-top: 8px;
+}
+#menu .list-group-item{
+	background: #F5F5F5;
+}
+#innerul li{
+	height: 50px;
+	padding-left: 40px;
+	padding-top: 16px;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+}
+#innerul .active {
+	background:#2e8ece ;
+}
+#innerul .active a{
+	color: #fff;
+}

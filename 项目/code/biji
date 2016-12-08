@@ -1,0 +1,15 @@
+1  如果想去给开源项目贡献代码（vuejs/vue）没有权限
+2  找到这个项目 fork
+
+
+git 的相关命令
+   1 git clone  克隆  从github 上去复制一个仓库的代码
+   写完某个功能
+    git status  查看状态
+   2 git add  .   把所有修改的 或者新增的文件  提交到暂存区
+   3 git commit  -m "提交的说明文字"
+   4 git remote -v  查看远程仓库的地址
+
+   新建一个仓库
+   1 右上角 +  有下拉菜单   new repository
+   2  勾选Public  默认

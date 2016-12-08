@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="./js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
+		<style type="text/css">
+			.navbar-header{
+			padding: 25px 0px 25px 90px;
+			color: #2E8ECE;
+			font:bold 22px "微软雅黑";
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid el-header navbar-inverse">
+			<ul class="nav navbar-right navbar-nav">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="#">登录</a>
+				</li>
+				<li>
+					<a href="#">快速注册</a>
+				</li>
+				<li>
+					<a href="#">帮助</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar navbar-default el-navbar">
+			<div class="navbar-header">
+				<a href="#">
+					<img alt="Brand" src="images/logo.png">
+				</a>
+				<span class="el-page-title">用户登录</span>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					用户登录
+				</div>
+				<div class="panel-body">
+					<form id="loginForm" class="form-horizontal el-login-form" action="index.html" method="post">
+						<p class="h4" style="margin: 10px 10px 20px 110px;color:#999;">请输入用户名和密码</p>
+						<div class="form-group">
+							<label class="control-label col-sm-2">用户名</label>
+							<div class="col-sm-10">
+								<input type="text" autocomplete="off" name="username" class="form-control" style="width: 400px;text-align: center;"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2">密&emsp;码</label>
+							<div class="col-sm-10">
+								<input type="password" autocomplete="off" name="password" class="form-control" style="width: 400px;text-align: center;"/>
+							</div>
+						</div>
+						<div class="form-gorup">
+							<div class="col-sm-offset-3">
+								<button class="btn btn-success" style="width: 100px;">
+								登录
+							</button> &emsp;&emsp;
+								<a href="register.html">新用户，马上注册</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<footer class="row">
+			<div class="container">
+				<div class="col-sm-8 infolist">
+					<ul>
+						<li>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</li>
+						<li>版权所有： 2006-2015成都源代码教育咨询有限公司</li>
+						<li>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</li>
+						<li>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</li>
+						<li>
+							<a href="##">蜀ICP备14030149号-1</a>
+							<a href="##">蜀公网安备510114990541</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<span>官方微博：</span>
+					<img src="./images/tecent.png" width="100%" />
+					<img src="./images/sina.png" / width="100%">
+				</div>
+				<div class="col-sm-2">
+					<span>官方微信：</span>
+					<img src="./images/contract.png" width="100%" />
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>

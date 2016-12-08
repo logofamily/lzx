@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/tongyong.css" />
+		<style type="text/css">
+			.el-tip-info {
+				border-left: 10px solid #2E8ECE;
+				background-color: #F4F8FA;
+			}
+			
+			.el-tip-info p {
+				margin-left: 10px;
+			}
+			
+			.form-group {
+				padding-left: 300px;
+				width: 900px;
+			}
+			.navbar-header{
+			padding: 25px 0px 25px 90px;
+			color: #2E8ECE;
+			font:bold 22px "微软雅黑";
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav id="el-top" class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+						<span class="sr-only">test</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="##">首页</a>
+						</li>
+						<li>
+							<a href="##" style="color:#00a8ff ;">小强</a>
+						</li>
+						<li>
+							<a href="##">赶快充值</a>
+						</li>
+						<li>
+							<a href="##">注销</a>
+						</li>
+						<li>
+							<a href="##">帮助</a>
+						</li>
+						<li>
+							<a href="##">联系客服</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="navbar navbar-default el-navbar">
+			<div class="navbar-header">
+				<a href="#">
+					<img alt="Brand" src="images/logo.png">
+				</a>
+				<span class="el-page-title">账户提现</span>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="el-tip-info">
+				<h3>账户提现</h3>
+				<p>1. 本平台工作日会处理当天 17:00 之前的提款申请。</p>
+				<p>2. 为了确保银行转账成功，请您确认银行账号信息的 正确性。</p>
+				<p>3. 单笔提现范围-普通用户500.00 元 ~ 500000.00 元。</p>
+				<p>4. 单笔提现范围-VIP用户500.00 元 ~ 500000.00 元。</p>
+				<p>5. 目前提现服务费：1万元(含) 之内：2.00 元/笔；1万元（以上） ：5.00 元/笔。</p>
+				<p>6. 为避免信用卡套现，故充值15日内未投资提现按提现金额的0.4%收取提现费用。</p>
+				<p>7. 本次可提现 = 可用余额 - 净值保证金 - 不可提现金额 + 投标冻结 - 最高服务费 - 返还体验金</p>
+			</div>
+
+			<div style="margin: 10px 2px;" class="row h4">
+				<div class="col-sm-4">
+					总金额：<span class="text-primary">10000元</span>
+				</div>
+				<div class="col-sm-4">
+					可提现金额：<span class="text-primary">8000元</span>
+				</div>
+				<div class="col-sm-4">
+					冻结金额：<span class="text-primary">2000元</span>
+				</div>
+			</div>
+
+			<div>
+				<form id="form" class="form-horizontal el-form" action="moneyWithdraw_save.do" method="post">
+					<div class="form-group">
+						<label class="control-label col-lg-2">银行</label>
+						<div class="col-sm-10">
+							<select class="form-control" name="bankType">
+								<option value="1">工商银行</option>
+								<option value="2">农业银行</option>
+								<option value="3">建设银行</option>
+								<option value="4">招商银行</option>
+								<option value="5">中国银行</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">开户行</label>
+						<div class="col-sm-10">
+							<input class="form-control" name="bankName" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">银行卡号</label>
+						<div class="col-sm-10">
+							<input class="form-control" name="accountNumber" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">户主姓名</label>
+						<div class="col-sm-10">
+							<input class="form-control" name=realName />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">提现金额</label>
+						<div class="col-sm-10">
+							<input class="form-control" name="moneyAmount" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">通知电话</label>
+						<div class="col-sm-10">
+							<input class="form-control" name="mobilePhone" />
+						</div>
+					</div>
+					<div class="form-group" style="padding-left: 500px;">
+						<button type="submit" class="col-sm-offset-2 btn btn-primary">确认提交</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<footer class="row">
+			<div class="container">
+				<div class="col-sm-8 infolist">
+					<ul>
+						<li>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</li>
+						<li>版权所有： 2006-2015成都源代码教育咨询有限公司</li>
+						<li>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</li>
+						<li>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</li>
+						<li>
+							<a href="##">蜀ICP备14030149号-1</a>
+							<a href="##">蜀公网安备510114990541</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<span>官方微博：</span>
+					<img src="./images/tecent.png" width="100%" />
+					<img src="./images/sina.png" / width="100%">
+				</div>
+				<div class="col-sm-2">
+					<span>官方微信：</span>
+					<img src="./images/contract.png" width="100%" />
+				</div>
+			</div>
+		</footer>
